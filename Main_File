@@ -1,0 +1,21 @@
+@bot.command()
+async def Example(ctx):
+    with open('img/Trash_1.jpg', 'rb') as f:
+        # Mari simpan file perpustakaan/library Discord yang dikonversi dalam variabel ini!
+        picture = discord.File(f)
+   # Kita kemudian dapat mengirim file ini sebagai tolok ukur!
+    await ctx.send(file=picture)
+
+@bot.command()
+async def How(ctx):
+    await ctx.send('- Gunakan tas belanja kain: Gunakan tas belanja kain atau tote bag yang bisa dipakai berulang kali. - Bawa botol minum sendiri: Gunakan botol minum yang bisa diisi ulang, seperti dari kaca atau stainless steel. - Hindari sedotan plastik: Ganti sedotan plastik dengan sedotan yang bisa dipakai lagi, atau minum langsung dari gelas. - Bawa peralatan makan sendiri: Bawa peralatan makan dan minum sendiri seperti gelas, botol, dan peralatan makan ketika pergi keluar rumah. - Kurangi produk kemasan: Hindari produk yang dikemas dalam kemasan plastik. - Pilih produk daur ulang: Saat belanja, pilih produk yang bisa didaur ulang. - Hindari produk sekali pakai: Hindari produk sekali pakai, seperti sendok atau garpu plastik. - Daur ulang plastik: Rajin daur ulang botol plastik dan kemasan plastik lainnya. - Hindari glitter: Glitter terbuat dari mikroplastik yang berdampak buruk bagi lautan. - Hindari alat cukur sekali pakai: Hindari alat cukur dengan kepala / mata pisau yang menyatu dengan gagang plastik.')
+
+@bot.command()
+async def Meaning(ctx):
+    await ctx.send('Mengurangi penggunaan plastik adalah kegiatan atau perilaku yang dilakukan untuk mengurangi produksi sampah plastik. Hal ini merupakan prinsip pertama yang paling mendasar dalam pengelolaan sampah.')
+
+@bot.command()
+async def Types(ctx):
+    await ctx.send('PETE (1): Plastik yang terbuat dari polietilen tereftalat.  HDPE (2): Plastik yang relatif kaku dan aman, tidak mengandung bisphenol A atau phthalates. Contohnya, kemasan susu, detergen, tas freezer, dan kantung plastik biasa.  PVC (3): Jenis plastik.  LDPE (4): Jenis plastik.  PP (5): Plastik yang dapat menahan suhu hingga 100 derajat Celcius. Plastik ini sering digunakan untuk membuat produk yang perlu tahan terhadap panas seperti botol makanan, tempat penyimpanan makanan, dan peralatan medis.  PS (6): Plastik yang umumnya digunakan dalam bentuk styroforam, kontainer plastik, sendok gapru plastik, gelas plastik sekali pakai.  Other (7): Plastik yang tidak termasuk kedalam klasifikasi enam kode sebelumnya. Plastik ini biasanya digunakan untuk barang-barang elektronik seperti case handphone, case iPod, CD, dan sejenisnya. ')
+
+bot.run("Token Here")
